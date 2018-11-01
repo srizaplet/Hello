@@ -33,3 +33,29 @@ exit
 ;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("C:/Users/Sree/AppData/Local/Temp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers, resolveSbtClassifiers");apply -cp "C:/Users/Sree/.IdeaIC2018.2/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
 exit
 {file:/C:/Users/Sree/repos/Hello/}hello/testOnly demo.HelloWorldTest
+reload
+compile
+{file:/C:/Users/Sree/repos/Hello/}hello/testOnly demo.HelloWorldTest
+compile
+reload
+sbt assembly
+compile
+evicted
+clean
+compile
+evicted
+clean compile
+compile clean
+show update
+dependencyOverrides 
+initialize
+show {file:/C:/Users/Sree/repos/Hello/}hello/test:testOptions
+set testOptions.in(ProjectRef(uri("file:/C:/Users/Sree/repos/Hello/"), "hello")) in Test+=Tests.Argument(TestFrameworks.ScalaTest, "-oDU")
+show {file:/C:/Users/Sree/repos/Hello/}hello/test:parallelExecution
+set parallelExecution.in(ProjectRef(uri("file:/C:/Users/Sree/repos/Hello/"), "hello")) in Test:=false
+{file:/C:/Users/Sree/repos/Hello/}hello/testOnly demo.HelloWorldTest
+initialize
+show {file:/C:/Users/Sree/repos/Hello/}hello/test:testOptions
+show {file:/C:/Users/Sree/repos/Hello/}hello/test:parallelExecution
+set parallelExecution.in(ProjectRef(uri("file:/C:/Users/Sree/repos/Hello/"), "hello")) in Test:=false
+{file:/C:/Users/Sree/repos/Hello/}hello/testOnly demo.HelloWorldTest
