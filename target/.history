@@ -59,3 +59,12 @@ show {file:/C:/Users/Sree/repos/Hello/}hello/test:testOptions
 show {file:/C:/Users/Sree/repos/Hello/}hello/test:parallelExecution
 set parallelExecution.in(ProjectRef(uri("file:/C:/Users/Sree/repos/Hello/"), "hello")) in Test:=false
 {file:/C:/Users/Sree/repos/Hello/}hello/testOnly demo.HelloWorldTest
+sbt reload
+reload
+compile
+assembly
+sbt assembly
+clean
+compile
+restart
+reload
